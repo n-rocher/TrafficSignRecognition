@@ -91,10 +91,6 @@ def load_data(folder, class_ids):
                     # On charge l'image
                     image = cv2.resize(cv2.imread(image_path), IMG_SIZE)
 
-                    if image is None : 
-                        print("NONENONENONENONENONENONENONENONENONENONENONENONENONENONENONENONENONENONENONENONENONENONENONENONE")
-                        continue
-
                     image_equalized = np.zeros_like(image)
 
                     # Adaptative Treshold
@@ -145,10 +141,6 @@ if __name__ == '__main__':
         "dataset": "European Traffic Sign Dataset",
         "model": "TrafficSignClassifier"
     })
-
-    # On charge le fichier des classes à utiliser
-    # class_file = pd.read_csv(CSV_CLASS)
-    # class_ids = class_file['Class'].tolist()
 
     class_ids = TRAINING_CLASS
 
