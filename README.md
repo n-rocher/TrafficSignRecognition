@@ -1,8 +1,8 @@
-<!-- <p align="center">
+<p align="center">
 
-![Demo of BiSeNet V2](image/bisenetv2.gif)
+![Banner](image/banner.png)
 
-</p> -->
+</p>
 
 # Traffic Sign Classification
 The goal of this project is to create an AI able to classify in real time traffic signs.
@@ -16,30 +16,25 @@ I trained the model using an I7-7700K with a 6GB GTX 1060 and 28GB of RAM.
 Those are the 53 categories trained to be classified by the AI :
 
     1: Virage à droite
-    100: Sens unique (droit)
-    107: Zone 30
-    108: Fin zone 30
-    109: Passage pour piétons
+    2: Virage à gauche
+    3: Double virage (gauche)
+    4: Double virage (droite)
+    7: Rétrécissement de la chaussée
     11: Ralentisseur simple
     12: Ralentisseur double
-    125: Ralentisseur
     13: Route glissante
-    140: Direction
     15: Chute de pierres
     16: Passage pour piétons
     17: Enfants (école)
-    2: Virage à gauche
     23: Intersection
     24: Intersection avec une route
     25: Rond-point
-    3: Double virage (gauche)
     32: Autres dangers
     35: Céder le passage
     36: Stop
     37: Route prioritaire
     38: Fin route prioritaire
     39: Priorité au trafic en sens inverse
-    4: Double virage (droite)
     40: Priorité au trafic en sens inverse
     41: Sens interdit
     51: Virage à gauche interdit
@@ -58,7 +53,6 @@ Those are the 53 categories trained to be classified by the AI :
     66: Vitesse maximale 100
     67: Vitesse maximale 110
     68: Vitesse maximale 120
-    7: Rétrécissement de la chaussée
     80: Direction - Tout droit
     81: Direction - Droite
     82: Direction - Gauche
@@ -68,6 +62,12 @@ Those are the 53 categories trained to be classified by the AI :
     86: Direction - Tourner à gauche
     87: Passer à droite
     88: Passer à gauche
+    100: Sens unique (droit)
+    107: Zone 30
+    108: Fin zone 30
+    109: Passage pour piétons
+    125: Ralentisseur
+    140: Direction
 
 # Datasets
 The AI was trained using a mix of those two datasets :
